@@ -5,7 +5,7 @@ import {
     getAuth,
 } from 'firebase/auth';
 import firebase_app from '@/firebase/config';
-
+import { LoadingScreen } from '@/app/partials';
 const auth = getAuth(firebase_app);
 
 export const AuthContext = React.createContext({});
@@ -34,7 +34,11 @@ export const AuthContextProvider = ({
 
     return (
         <AuthContext.Provider value={{ user }}>
-            {loading ? <div>Loading...</div> : children}
+            {loading ? 
+            // <div>Loading...</div> 
+            <LoadingScreen />
+            : children}
+            {/* {children} */}
         </AuthContext.Provider>
     );
 };

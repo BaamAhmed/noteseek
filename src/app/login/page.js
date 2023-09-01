@@ -2,9 +2,10 @@
 import {useState, useLayoutEffect} from  'react'
 import {useRouter} from 'next/navigation'
 import Image from 'next/image'
-import jumbotronMain from '../jumbotron_main.png'
+import loginImg from './login.png'
 import login from '@/firebase/auth/login'
 import { useAuthContext } from '@/context/AuthContext'
+
 
 export default function Login() {
     const router = useRouter()
@@ -20,6 +21,7 @@ export default function Login() {
             router.push('/dashboard')
         }
     }
+    
 
     
     if (user != null) router.push('/dashboard')
@@ -35,14 +37,14 @@ export default function Login() {
                     <input onChange={(e) => setEmail(e.target.value)} name='email' placeholder='john.doe@email.com' value={email} type="text" className='border-4 border-black rounded-xl p-2 mb-5 px-4' />
                     <label htmlFor="" className='mb-2'>password</label>
                     <input onChange={e => setPassword(e.target.value)} name='password' type="password" value={password} className='border-4 border-black rounded-xl p-2 mb-10 px-4' />
-                    <button onClick={handleSubmission} className='px-3 p-2 border-4 border-black rounded-xl w-1/5 text-xl font-bold drop-shadow-sharp bg-white'>login</button>
+                    <button onClick={handleSubmission} className='px-3 p-2 border-4 border-black rounded-xl w-1/5 text-xl font-bold drop-shadow-sharp bg-white mb-3'>login</button>
 
                     
                     <p>don’t have an account? <a href='register' className='underline hover:font-bold'>create one here</a></p>
                 </div>
                 <div className='flex flex-row-reverse'>
                     <Image 
-                        src={jumbotronMain}
+                        src={loginImg}
                         width={500}
                         height={500}
                     />

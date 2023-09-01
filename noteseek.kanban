@@ -1,0 +1,124 @@
+{
+  "lists": [
+    {
+      "id": "ff5124dd-aa22-4cff-968a-c0781aa56ea9",
+      "title": "To Do",
+      "cards": [
+        {
+          "id": "f28ad554-cffb-4b6a-b7e8-c86ffe36c292",
+          "listId": "ff5124dd-aa22-4cff-968a-c0781aa56ea9",
+          "title": "Add input verification to sign up form",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "5087dcfe-1125-4157-b29f-2345c5fe7bd6",
+          "listId": "ff5124dd-aa22-4cff-968a-c0781aa56ea9",
+          "title": "Add toast/flash messages for auth and other events",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "255818bc-4d90-47d5-bc20-14cdc5d1b19b",
+          "listId": "ff5124dd-aa22-4cff-968a-c0781aa56ea9",
+          "title": "Draw and put in place the actual graphics",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "d435d351-ae3f-4988-a831-26a36fe1a857",
+          "listId": "ff5124dd-aa22-4cff-968a-c0781aa56ea9",
+          "title": "Design and update the favicon to reflect the new name",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": "890f920c-ddf6-4991-97d3-1594243a7f54",
+      "title": "In Process",
+      "cards": []
+    },
+    {
+      "id": "9ca7fbf7-ef56-481d-97c3-aa60933795e5",
+      "title": "Done",
+      "cards": [
+        {
+          "id": "4de1f036-d9cc-4406-bd1b-4e59355f74f7",
+          "listId": "9ca7fbf7-ef56-481d-97c3-aa60933795e5",
+          "title": "Develop UI for dashboard",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "c57fc498-92cc-4410-9f9a-b3464246af04",
+          "listId": "9ca7fbf7-ef56-481d-97c3-aa60933795e5",
+          "title": "Figure out document-specific and user-specific routes",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "40a9af99-df32-4900-9657-2cdd40fbc1cb",
+          "listId": "9ca7fbf7-ef56-481d-97c3-aa60933795e5",
+          "title": "Allow user to upload document -> check for no. of pages before uploading to firebase",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "163acb32-f95e-4c59-8e77-3732e70c157f",
+          "listId": "9ca7fbf7-ef56-481d-97c3-aa60933795e5",
+          "title": "Look into storing additional user info besides just email and password in Firebase Auth",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "241a6891-33cd-462a-8d64-baeb86544155",
+          "listId": "9ca7fbf7-ef56-481d-97c3-aa60933795e5",
+          "title": "Set up a scaleable Python backend - look at Django or Google Cloud Functions",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": "24f0a479-a2a2-4ab9-915a-8c6a282162be",
+      "title": "Bugs",
+      "cards": [
+        {
+          "id": "3565025b-1887-4621-aed4-2717bad254ea",
+          "listId": "24f0a479-a2a2-4ab9-915a-8c6a282162be",
+          "title": "A stutter when redirecting from protected routes",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    }
+  ],
+  "archive": {
+    "lists": [],
+    "cards": []
+  },
+  "settings": {
+    "labels": []
+  }
+}
