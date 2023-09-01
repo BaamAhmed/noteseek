@@ -25,27 +25,21 @@ export default function Feedback() {
 
     return (
         <div className="min-h-screen px-36">
-            <div className="grid min-h-screen grid-cols-2 gap-3 items-center">
-                <div className='flex flex-col'>
-                    <h1 className="text-6xl font-bold mb-5">login</h1>
-                    
-                    <label htmlFor="" className='mb-2'>email</label>
-                    <input onChange={(e) => setEmail(e.target.value)} name='email' placeholder='john.doe@email.com' value={email} type="text" className='border-4 border-black rounded-xl p-2 mb-5 px-4' />
-                    <label htmlFor="" className='mb-2'>password</label>
-                    <input onChange={e => setPassword(e.target.value)} name='password' type="password" value={password} className='border-4 border-black rounded-xl p-2 mb-10 px-4' />
-                    <button onClick={handleSubmission} className='px-3 p-2 border-4 border-black rounded-xl w-1/5 text-xl font-bold drop-shadow-sharp bg-white mb-3'>login</button>
-
-                    
-                    <p>don’t have an account? <a href='register' className='underline hover:font-bold'>create one here</a></p>
-                </div>
-                <div className='flex flex-row-reverse'>
-                    <Image 
-                        src={loginImg}
-                        width={500}
-                        height={500}
-                    />
-                </div>
+            <h1 className='font-bold text-5xl mt-24 mb-3'>Feedback</h1>
+            <p className='text-sm mb-10'>Thank you for taking the time out to fill this form! :D</p>
+            
+            <div className='flex flex-col w-3/5'>
+                <form action="https://public.herotofu.com/v1/8a6bb1d0-aff7-11ed-bca4-27c965651142" method="post">
+                    <div className="grid grid-cols-2 gap-2 mb-2">
+                        <input required name='firstName' placeholder="First Name" type="text" className="rounded-xl bg-white border-black border-4 py-2 px-4" />
+                        <input name='lastName' placeholder="Last Name" type="text" className="border-4 border-black rounded-xl bg-white py-2 px-4" />
+                    </div>
+                    <input required name='email' placeholder="Email Address" type="email" className="border-4 border-black rounded-xl w-full bg-white py-2 px-4 mb-2"/>
+                    <textarea required name="msg" placeholder="Please provide details if reporting bugs, it'll help me squash them faster :)" className="border-4 border-black bg-white mb-2 rounded-xl w-full py-2 px-4" id="" cols={30} rows={10}></textarea>
+                    <button className="rounded-xl border-4 border-black bg-white drop-shadow-sharp font-semibold text-center w-full py-2 hover:bg-slate-300">Submit</button>
+                </form>
             </div>
+            
         </div>
     )
     
