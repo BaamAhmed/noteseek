@@ -82,9 +82,9 @@ export default function Dashboard() {
                     <h4 className='font-bold text-3xl'>uploaded documents</h4>
                     <button onClick={() => {router.push('/documents/upload')}} disabled={docList.length >= 5} className='disabled:opacity-30 rounded-xl border-black border-4 p-3 px-5 drop-shadow-sharp bg-white'>upload new</button>
                 </div>
-                {docList.length > 0 ? docList.map((item) => {
+                {docList.length > 0 ? docList.map((item, index) => {
                     return (
-                        <a href={`/documents/view/${item.id}`}>
+                        <a key={index} href={`/documents/view/${item.id}`}>
                             <div className='w-full p-3 px-5 border-4 border-black rounded-xl drop-shadow-sharp bg-white flex items-center hover:bg-slate-200 mb-3'>
                                 <BsFileEarmarkTextFill className='mr-3 text-xl' />
                                 <p className='font-medium text-xl grow'>{item.title}</p>
@@ -95,7 +95,7 @@ export default function Dashboard() {
                 }): 
                 <div className='w-full p-3 rounded-xl bg-slate-300 flex flex-col opacity-50 items-center justify-center py-5'>
                     <p className='text-xl font-bold '>No Documents Found</p>
-                    <p className='text-sm '>To start scanning and learning from your documents, click the "upload new" button above.</p>
+                    <p className='text-sm '>To start scanning and learning from your documents, click the &quot;upload new&quot; button above.</p>
                 </div>
                 }
                 

@@ -152,9 +152,9 @@ export default function Document({params}) {
                     </div>
                     <h4 className='font-bold text-2xl mb-3'>extracted ideas</h4>
                     {pagesData[currPage] && pagesData[currPage].map((item, index) => 
-                        <div className='border-black border-4 rounded-xl drop-shadow-sharp bg-white p-3 px-5 mb-5'>
+                        <div key={index} className='border-black border-4 rounded-xl drop-shadow-sharp bg-white p-3 px-5 mb-5'>
                             <div className="flex justify-between">
-                                <p>"...{item.phrase}..."</p>
+                                <p>&quot;...{item.phrase}...&quot;</p>
                                 <button onClick={() => {
                                         if (index == openSection) {
                                             setOpenSection(-1)
@@ -169,7 +169,7 @@ export default function Document({params}) {
                                 <div className='mt-3'>
                                     {item.results.map((resource, resourceIndex) => {
                                         return (
-                                            <a className='hover:bg-slate-200 rounded-xl' href={resource.url}>
+                                            <a key={resourceIndex} className='hover:bg-slate-200 rounded-xl' href={resource.url}>
                                                 {resourceIndex != 0 && <hr />}
                                                 <h4 className='font-bold text-lg mt-3'>{resource.title}</h4>
                                                 <p>{resource.desc}</p>
